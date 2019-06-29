@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ComplexForms</string>
+
+        <string name="gender">Gender</string>
+         <string name="Course">Course</string>
+         <string name="reg_no">RegNO</string>
+        <string name="name">Name</string>
+        <string name="f">F</string>
+        <string name="m">M</string>
+        <string name="tittle">Program Registration System</string>
+        <string name="continu">Continue</string>
+        <string name="cancel">Cancel</string>
+        <string name="course">Course</string>
+
+
+</resources>

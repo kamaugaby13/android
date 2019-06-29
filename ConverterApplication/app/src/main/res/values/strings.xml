@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Converter Application</string>
+    <string name="kelvin_radio">Kelvin</string>
+    <string name="degrees_radio">Degrees</string>
+    <string name="kelvin_radio">Kelvin</string>
+    <string name="degrees_radio">Degrees</string>
+    <string name="convert_button">CONVERT</string>
+    <string name="temp_enter">Enter Temparature</string>
+    <string name="kelvin">KELVIN</string>
+</resources>

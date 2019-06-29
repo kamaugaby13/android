@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/tittle" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/regNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="83dp"
+        android:text="@string/reg_no" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regNo"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/gender" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="-103dp"
+        android:layout_toEndOf="@id/name"
+        android:layout_toRightOf="@id/name" />
+
+    <EditText
+        android:id="@+id/regNoEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tittle"
+        android:layout_alignEnd="@+id/nameEditText"
+        android:layout_alignRight="@+id/nameEditText"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:layout_toEndOf="@+id/name"
+        android:layout_toRightOf="@+id/name" />
+
+    <RadioButton
+        android:id="@+id/m"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="-13dp"
+        android:layout_toEndOf="@id/f"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@id/f"
+        android:text="@string/m" />
+
+    <RadioButton
+        android:id="@+id/f"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="-15dp"
+        android:layout_toEndOf="@id/gender"
+        android:layout_toRightOf="@id/gender"
+        android:text="@string/f" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="86dp"
+        android:text="@string/continu" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="77dp"
+        android:text="@string/cancel" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regNo"
+        android:layout_marginTop="46dp"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:text="@string/course" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/course" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
